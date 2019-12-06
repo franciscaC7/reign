@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        nav,
+        .divisor {
+            background-color: #fd7e14;
+        }
+
+        #container1,
+        #container2,
+        #container3 {
+            height: 500px;
+        }
+
+        .carousel-inner {
+            width: fit-content;
+        }
+
+        .carousel-inner {
+            width: fit-content;
+        }
+
+        .divisor {
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            height: 24px;
+        }
+
+        span.text-white {
+            cursor: default;
+        }
+
+        .nav {
+            width: 55%;
+            position: relative;
+            bottom: 12px;
+        }
+
+        .nav-link font-weight-bold text-uppercase.active {
+            border-radius: 0.25rem 0.25rem 0 0;
+        }
+
+        .nav-item {
+            background-color: #fee6aa;
+            width: 14rem;
+        }
+
+        #texto {
+            width: 50%;
+        }
+
+        .anychart-credits {
+            display: none;
+        }
+
+        input {
+            width: 40% !important;
+        }
+    </style>
+</head>
+
+<body class="bg-light text-center">
+
+    <nav class="navbar py-3">
+        <img class="ml-1" src="img/icone.png" height="48px" width="50px">
+        <span class="text-right">
+            <span class="text-white">Siga nossas redes sociais!<br></span>
+            <a href="https://www.facebook.com/"><img height="25px" src="img/facebook.svg"></a>
+            <a href="https://www.twitter.com/"><img height="25px" src="img/twitter.svg"></a>
+            <a href="https://www.instagram.com/"><img height="25px" src="img/instagram.svg"></a>
+        </span>
+    </nav>
+
+    <div class="mt-1 divisor"></div>
+
+    <ul class="nav nav-pills mx-auto mb-5 d-flex justify-content-between">
+        <li class="nav-item rounded-top">
+            <a class="nav-link font-weight-bold text-uppercase active" data-toggle="tab" href="#inicio">Início</a>
+        </li>
+        <li class="nav-item rounded-top">
+            <a class="nav-link font-weight-bold text-uppercase text-dark" data-toggle="tab" href="#sobre">Sobre</a>
+        </li>
+        <li class="nav-item rounded-top">
+            <a class="nav-link font-weight-bold text-uppercase" id="mostrar" data-toggle="tab" href="#resultados">Resultados</a>
+        </li>
+        <li class="nav-item rounded-top">
+            <a class="nav-link font-weight-bold text-uppercase" data-toggle="tab" href="#comentarios">Comentários</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="inicio" class="position-relative">
+            <div class="row mx-auto" style="width: 55%; position: relative; right: 50px;">
+                <div class="col-6 d-flex justify-content-end">
+                    <div class="carousel slide mt-5" data-ride="carousel" style="height: 300px;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block m-auto" width="300px" src="img/g3.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block m-auto" width="300px" src="img/g4.png">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block m-auto" width="300px" src="img/g5.png">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-start">
+                    <div class="jumbotron bg-light pr-5">
+                        <h1 class="display-4  font-weight-bold" style="color: #6f42c1;">Conheça!</h1>
+                        <p class="lead  font-weight-bold">As melhores metodologias de ensino aplicadas à programação:</p>
+                        <hr class="my-4">
+                        <p>Veja os resultados da nossa pesquisa.</p>
+                        <a class="btn btn-lg" style="background-color: #adb5bd" id="botao">Clique para conferir</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade text-justify" id="sobre">
+            <div id="texto" class="mx-auto">
+                <p>A programação é uma disciplina que está presente na grade curricular de diversos
+                    cursos, níveis e modalidades de ensino da área da computação. Wirth (1989) conceituou a
+                    programação como, “a arte ou a técnica de construir e formular algoritmos de uma forma
+                    sistemática”. Desse modo, o ato da prática de programação é induzido propriamente pelo dom
+                    ou ainda pelo aprendizado e aprimoramentos dos conhecimentos das técnicas de programação.</p>
+                <p>Sendo assim, é relevante ao aluno das áreas exatas “ter sua base bem sedimentada, para que
+                    fique apto a prosseguir de maneira positiva durante os seus estudos”. No entanto, existem alunos
+                    que sentem dificuldades na compreensão teórico-prática dos conteúdos o que resulta em
+                    elevados índices de reprovações ou trancamentos na disciplina, como também a desistência do
+                    curso (SANTOS; COSTA, 2006).</p>
+                <img class="d-block mx-auto my-3" src="img/professor.jpg">
+
+                <p>Diante desse contexto, o presente site buscar mostrar os resultados de pesquisa de um mapeamento
+                    sistemático de metodologias de ensino aplicadas a programação. Tendo como objetivo, mostrar de forma
+                    simplificada quais as melhores metodologias de ensino, facilitando assim a visualização de seus
+                    dados,por meios de gráficos e uma breve explicação dos mesmo.</p>
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="resultados">
+            <img class="d-block mb-5 mx-auto" width="250px" src="img/g3.png">
+            <img class="d-block mb-5 mx-auto" width="250px" src="img/g4.png">
+            <img class="d-block mb-5 mx-auto" width="250px" src="img/g5.png">
+        </div>
+        <div class="tab-pane fade" id="comentarios">
+            <div class="form-group">
+                <label class="font-weight-bold" style="color: #6f42c1;" or="exampleFormControlInput1">Comentários</label>
+                <input type="text" class="form-control mx-auto" id="teste" placeholder="Comente aqui">
+            </div>
+            <button class="btn mt-3" style="background-color: #adb5bd" onclick="enviar()">Enviar</button>
+            <div class="bg-dark text-white" id="comentarios"></div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 2500
+        })
+        function enviar() {
+            valor = $('#teste').val()
+            $('#comentarios').text(valor)
+        }
+        $('#botao').on('click', function () {
+            $('#mostrar').tab('show')
+        })
+    </script>
+
+</body>
+
+</html>
